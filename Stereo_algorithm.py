@@ -2,7 +2,7 @@ import cv2
 import numpy as np
 
 def stereo(imgL, imgR):
-    # --- Disparity 계산 ---
+    # --- Disparity 계산 --- 테스트 수정
     # numDisparities와 blockSize는 이미지에 맞게 조절하는 것이 좋습니다.
     # 가까운 물체의 최대 disparity를 포함하도록 numDisparities 설정이 중요할 수 있습니다.
     stereo = cv2.StereoSGBM_create(blockSize = 7, numDisparities = 96, speckleWindowSize= 100, speckleRange = 100) # 흑백만 인식함
